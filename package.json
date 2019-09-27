@@ -1,0 +1,60 @@
+{
+  "name": "@eropple/nestjs-rx-mailer",
+  "version": "0.1.0",
+  "description": "Build and send rich HTML emails easily with JSX and React as part of your NestJS app.",
+  "main": "dist",
+  "author": "Ed Ropple",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eropple/nestjs-rx-mailer"
+  },
+  "private": false,
+  "scripts": {
+    "build": "yarn exec -- tsc",
+    "watch": "yarn build --watch",
+    "prepare": "yarn build",
+    "lint": "tslint -p tsconfig.json -c tslint.json"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^6.5.2",
+    "@nestjs/core": "^6.5.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^6.3.3"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^6.5.2",
+    "@nestjs/core": "^6.5.2",
+    "@types/bunyan": "^1.8.6",
+    "@types/nodemailer": "^6.2.1",
+    "@types/react": "^16.9.3",
+    "jest": "^24.9.0",
+    "prettier": "^1.15.3",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^6.3.3",
+    "ts-jest": "^24.0.2",
+    "tslint": "5.16.0",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "@eropple/bunyan-wrapper": "^0.1.2",
+    "@eropple/rx-mailer": "^0.2.1"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
